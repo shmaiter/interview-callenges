@@ -26,7 +26,7 @@
 # -109 <= nums[i] <= 109
 
 class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
+    def containsDuplicate(self, nums: list[int]) -> bool:
         s = set()
 
         for n in nums:
