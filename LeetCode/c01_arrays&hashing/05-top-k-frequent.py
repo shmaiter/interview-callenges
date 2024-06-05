@@ -25,7 +25,7 @@ Follow up: Your algorithm's time complexity must be better than O(n log n), wher
 
 def topKFrequent(nums: list[int], k: int) -> list[int]:
     count = {}
-    freq = [[] for i in range(len(nums) + 1)]
+    freq = [[] for i in range(len(nums) + 1)]  # plus 1 because the 0 is never used
     # freq = [[]] * (len(nums) + 1)  # This method doesn't word because copies the same sublist internally, causing to mutate
     # every array with the same values from the others.
 
